@@ -1,2 +1,2 @@
-# Animal-Crossing-Calendar
+# Calendar
 Calendar

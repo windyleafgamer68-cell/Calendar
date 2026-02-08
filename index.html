@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#4CAF50">
+
+        <title>Animal Crossing Calendar</title>
+    </head>
+    
+    <body>
+        
+        <div class= "Total">
+            <!-- <h1 style=
+            "color: rgb(182, 51, 51);
+            text-align: center;
+            font-size: 300%;"
+            >Calendar</h1> -->
+            <div class="header">
+                <button id="prev">
+                    <
+                </button>
+                <div class="Month_Year" id="Month_Year"></div>
+                <button id="next">
+                    >
+                </button>
+                <!-- <div class="Year" id="Year"></div> -->
+            </div>
+
+            <div class="Days" >
+                <div class="Day">Mon</div>
+                <div class="Day">Tue</div>
+                <div class="Day">Wed</div>
+                <div class="Day">Thu</div>
+                <div class="Day">Fri</div>
+                <div class="Day">Sat</div>
+                <div class="Day">Sun</div>
+            </div>
+
+            <div class="Numbers" id="Numbers">
+                <!-- <input type="button" id="check_active"> -->
+            </div>
+
+            
+            <form id="All_Ques">
+                <div class="Question1">Did You Play Animal Crossing Today?</div>
+                <div class="button1">
+                    <input type="radio" name="q1" id="yes" value="Yes">
+                    <label for="yes" class="radio">Yes</label>
+                    <input type="radio" name="q1" id="no" value="No"> 
+                    <label for="no" class="radio">No</label>
+                </div>
+
+                <div class="Question2">Did You Finish Doing Everything?</div>
+                <div class="button2">
+                    <input type="radio" name="q2" id="yes1" value="Yes">
+                    <label for="yes1" class="radio">Yes</label>
+                    <input type="radio" name="q2" id="no1" value="No">
+                    <label for="no1" class="radio">No</label>
+                </div>  
+    
+            <div class="submit_button" >
+                <button type="submit">All Done</button>
+            </div>
+
+            
+            </form>
+            <!--Fix highlight not changing for day-->
+            <div class="reset_button" >
+                <button type="button" id="resetprog">Reset You Progress?</button>
+                <div id="lp_date"></div>
+            </div>
+            
+            
+
+        </div>
+
+        
+
+        <div class="Last_played">
+            
+        </div>
+
+
+        
+
+
+        <script src="main.js"></script>
+
+        <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+        </script>
+
+
+    </body>
+</html>

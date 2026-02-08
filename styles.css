@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 188, 43);
+
+}
+
+.Total {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgb(255, 227, 134);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: #ffdd80;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px black;
+
+}
+
+.Month_Year {
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+}
+/* 
+.Year {
+    text-align: center;
+} */
+
+.Days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+.Day{
+    /* background-color: white; */
+    /* border: 2px solid black; */
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+.Numbers {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: repeat(7, 1fr);
+    border: 2px solid black; 
+    gap: 5px;
+    
+}
+
+.Number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.date_inactive {
+    color: #b9830d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.Number.active {
+    background: grey;
+    color: white;
+}
+
+.Number:hover {
+    background: lightcyan;
+}
+
+.Number:checked + input{
+    background:rgb(62, 255, 104);
+    font-size: 200px;
+}
+
+.date_inactive:hover {
+    color: gray
+}
+
+
+.Question1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button1 {
+    text-align: center;
+}
+
+.Question2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button2 {
+    text-align: center;
+}
+
+.submit_button {
+    text-align: center;
+    padding: 30px;
+}
+
+.submit_button button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.green-day {
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.red-day {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.today {
+    background-color: steelblue;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.selected {
+    outline: 3px solid blue;
+    border-radius: 10px;
+}
+
+.partial-day {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.reset_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+/* #yes {
+    text-align: center;
+    justify-content: space-between;
+} */
+
+
+/* .Question_box {
+    background: rgb(250, 175, 13);
+    position: relative;
+    top: 315px;
+    right: 300px;
+} */
+
+/* https://www.youtube.com/watch?v=OcncrLyddAs&t=85s */
